@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Golden Hive Honey | 100% Pure Raw Honey, Direct From Natural Bee Farms</title>
+<meta name="description" content="Golden Hive Honey delivers 100% pure raw honey, freshly collected from trusted natural bee farms. No sugar, no chemicals, lab tested, with nationwide home delivery.">
+<meta name="keywords" content="pure raw honey, natural honey, organic honey, honey delivery, bee farm honey, chemical free honey, Golden Hive Honey">
+<meta property="og:title" content="Golden Hive Honey — Pure Raw Honey From Nature To Your Home">
+<meta property="og:description" content="Freshly collected from trusted beekeepers. Pure, healthy, and delicious. Nationwide home delivery available.">
+<meta property="og:type" content="website">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--gold:#f2b705;--gold-dark:#d99a00;--brown:#3b2412;--brown-soft:#5a3a1d;--green:#2f6b3a;--cream:#fffaf0;--white:#fff;--shadow:0 18px 45px rgba(59,36,18,.12)}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Poppins,sans-serif;background:var(--cream);color:var(--brown);line-height:1.65;overflow-x:hidden}
+img{max-width:100%;display:block}
+.container{width:min(1140px,92%);margin:auto}
+section{padding:76px 0}
+h1,h2,h3{font-family:'Playfair Display',serif;color:var(--brown)}
+h2{font-size:clamp(1.9rem,4vw,2.7rem);text-align:center;margin-bottom:14px}
+.sub{text-align:center;max-width:680px;margin:0 auto 44px;color:var(--brown-soft)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 28px;border-radius:999px;font-weight:600;text-decoration:none;transition:.25s;border:0;cursor:pointer}
+.btn-gold{background:linear-gradient(135deg,var(--gold),var(--gold-dark));color:#3b2412;box-shadow:0 10px 25px rgba(242,183,5,.35)}
+.btn-gold:hover{transform:translateY(-3px)}
+.btn-outline{border:2px solid var(--gold);color:var(--brown);background:rgba(255,255,255,.75)}
+.btn-outline:hover{background:var(--gold);transform:translateY(-3px)}
+header{position:sticky;top:0;z-index:50;background:rgba(255,250,240,.92);backdrop-filter:blur(10px);border-bottom:1px solid rgba(59,36,18,.08)}
+.nav{display:flex;align-items:center;justify-content:space-between;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Playfair Display',serif;font-weight:700;font-size:1.25rem;color:var(--brown);text-decoration:none}
+.logo span{color:var(--gold-dark)}
+.bee{font-size:1.5rem}
+nav ul{display:flex;gap:22px;list-style:none}
+nav a{color:var(--brown);text-decoration:none;font-size:.92rem;font-weight:500}
+nav a:hover{color:var(--gold-dark)}
+.menu-btn{display:none;background:none;border:0;font-size:1.6rem;color:var(--brown)}
+.hero{position:relative;padding:90px 0 100px;background:radial-gradient(circle at 80% 10%,#fff3cf 0,transparent 45%),linear-gradient(180deg,#fffaf0,#fff)}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.eyebrow{display:inline-flex;gap:8px;align-items:center;background:#fff;border:1px solid rgba(242,183,5,.45);color:var(--brown-soft);padding:8px 16px;border-radius:999px;font-size:.82rem;font-weight:500;margin-bottom:20px}
+.hero h1{font-size:clamp(2.3rem,5.4vw,4rem);line-height:1.12;margin-bottom:18px}
+.hero h1 em{color:var(--gold-dark);font-style:normal}
+.hero p{font-size:1.08rem;color:var(--brown-soft);max-width:540px;margin-bottom:30px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:34px}
+.badges{display:flex;flex-wrap:wrap;gap:10px}
+.badge{background:#fff;border:1px solid rgba(59,36,18,.09);padding:9px 15px;border-radius:999px;font-size:.8rem;font-weight:500;box-shadow:0 6px 16px rgba(59,36,18,.06)}
+.hero-visual{position:relative}
+.jar{background:linear-gradient(160deg,#fff8e1,#ffe9a8);border-radius:34px;padding:38px;box-shadow:var(--shadow);border:1px solid rgba(242,183,5,.35);text-align:center;position:relative;overflow:hidden}
+.jar:before{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(59,36,18,.08) 1px,transparent 1px);background-size:22px 22px;opacity:.5}
+.jar-emoji{font-size:clamp(5rem,12vw,8rem);position:relative}
+.jar-caption{position:relative;font-weight:600;margin-top:10px}
+.jar-note{position:relative;font-size:.86rem;color:var(--brown-soft)}
+.honeycomb{position:absolute;right:-30px;bottom:-25px;width:150px;height:150px;background:
+ repeating-linear-gradient(60deg,rgba(242,183,5,.22) 0 12px,transparent 12px 24px),
+ repeating-linear-gradient(-60deg,rgba(242,183,5,.22) 0 12px,transparent 12px 24px);
+ clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);opacity:.65}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:22px}
+.card{background:#fff;border-radius:24px;padding:30px;box-shadow:var(--shadow);border:1px solid rgba(59,36,18,.06);transition:.3s}
+.card:hover{transform:translateY(-6px)}
+.icon{width:58px;height:58px;border-radius:18px;display:grid;place-items:center;font-size:1.6rem;background:#fff3cf;margin-bottom:16px}
+.card h3{font-size:1.15rem;margin-bottom:8px}
+.card p{color:var(--brown-soft);font-size:.94rem}
+.process{background:linear-gradient(180deg,#fff,#fff6dc)}
+.steps{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:22px;counter-reset:step}
+.step{background:#fff;padding:30px;border-radius:24px;box-shadow:var(--shadow);position:relative}
+.step:before{counter-increment:step;content:"0" counter(step);font-family:'Playfair Display',serif;font-size:2.4rem;color:var(--gold);position:absolute;top:18px;right:24px;opacity:.55}
+.benefits{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:18px}
+.benefit{display:flex;gap:14px;align-items:flex-start;background:#fff;padding:22px;border-radius:20px;box-shadow:var(--shadow)}
+.benefit span{font-size:1.5rem}
+.products{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:24px}
+.product{background:#fff;border-radius:28px;overflow:hidden;box-shadow:var(--shadow);text-align:center;transition:.3s;border:1px solid rgba(59,36,18,.06)}
+.product:hover{transform:translateY(-7px)}
+.product-top{background:linear-gradient(135deg,#fff3cf,#ffe08a);padding:38px 20px;font-size:3.4rem}
+.product-body{padding:26px}
+.price{font-family:'Playfair Display',serif;font-size:1.5rem;color:var(--gold-dark);margin:8px 0 14px}
+.reviews{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:22px}
+.review{background:#fff;padding:28px;border-radius:24px;box-shadow:var(--shadow)}
+.stars{color:var(--gold-dark);letter-spacing:2px;margin-bottom:10px}
+.review p{font-style:italic;color:var(--brown-soft)}
+.reviewer{margin-top:16px;font-weight:600}
+.faq details{background:#fff;border-radius:18px;padding:20px 24px;margin-bottom:14px;box-shadow:var(--shadow)}
+.faq summary{font-weight:600;cursor:pointer}
+.faq p{margin-top:10px;color:var(--brown-soft)}
+.delivery{background:linear-gradient(135deg,#2f6b3a,#24522e);color:#fff}
+.delivery h2,.delivery h3{color:#fff}
+.delivery .sub{color:#e8f3e9}
+.delivery-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.dcard{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.18);padding:26px;border-radius:22px}
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:36px;align-items:center}
+.contact-card{background:#fff;padding:34px;border-radius:26px;box-shadow:var(--shadow)}
+.contact-list{list-style:none;display:grid;gap:14px;margin-top:20px}
+.contact-list a{color:var(--brown);text-decoration:none;font-weight:500}
+.map{height:100%;min-height:300px;border-radius:26px;overflow:hidden;box-shadow:var(--shadow)}
+.map iframe{width:100%;height:100%;min-height:300px;border:0}
+footer{background:var(--brown);color:#f7ecd9;padding:52px 0 24px}
+.footer-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:34px;margin-bottom:32px}
+footer h3{color:var(--gold);margin-bottom:14px}
+footer a{color:#f7ecd9;text-decoration:none}
+footer ul{list-style:none;display:grid;gap:10px}
+.socials{display:flex;gap:12px;margin-top:16px}
+.socials a{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.1);transition:.25s}
+.socials a:hover{background:var(--gold);color:var(--brown)}
+.copyright{border-top:1px solid rgba(255,255,255,.15);padding-top:20px;text-align:center;font-size:.85rem;color:#d8c6ad}
+.whatsapp-float{position:fixed;right:18px;bottom:18px;z-index:60;background:#25d366;color:#fff;width:58px;height:58px;border-radius:50%;display:grid;place-items:center;font-size:1.7rem;text-decoration:none;box-shadow:0 12px 30px rgba(37,211,102,.4)}
+.reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
+.reveal.visible{opacity:1;transform:none}
+@media(max-width:860px){
+ nav ul{display:none}
+ .menu-btn{display:block}
+ .hero-grid,.contact,.footer-grid{grid-template-columns:1fr}
+ .hero{padding:64px 0 76px}
+ section{padding:58px 0}
+}
+</style>
+</head>
+<body>
+<header>
+  <div class="container nav">
+    <a class="logo" href="#home"><span class="bee">🐝</span> Golden Hive <span>Honey</span></a>
+    <nav>
+      <ul>
+        <li><a href="#why">Why Us</a></li>
+        <li><a href="#process">Process</a></li>
+        <li><a href="#benefits">Benefits</a></li>
+        <li><a href="#products">Products</a></li>
+        <li><a href="#reviews">Reviews</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <button class="menu-btn" aria-label="Open menu">☰</button>
+  </div>
+</header>
+
+<main id="home">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div class="reveal">
+        <div class="eyebrow">🍯 100% Pure • Raw • Natural</div>
+        <h1>Pure Raw Honey <em>From Nature</em> To Your Home</h1>
+        <p>Freshly collected from trusted beekeepers. Pure, healthy, and delicious—delivered safely to your doorstep nationwide.</p>
+        <div class="hero-cta">
+          <a href="#products" class="btn btn-gold">Order Now</a>
+          <a href="https://wa.me/8801XXXXXXXXX?text=Hello%2C%20I%20want%20to%20order%20Golden%20Hive%20Honey." class="btn btn-outline">💬 WhatsApp Order</a>
+        </div>
+        <div class="badges">
+          <div class="badge">✅ 100% Natural</div>
+          <div class="badge">🧪 Lab Tested</div>
+          <div class="badge">🚫 Chemical Free</div>
+          <div class="badge">🚚 Fast Delivery</div>
+          <div class="badge">🔒 Secure Payment</div>
+        </div>
+      </div>
+      <div class="hero-visual reveal">
+        <div class="jar">
+          <div class="jar-emoji">🍯</div>
+          <div class="jar-caption">Golden Hive Raw Honey</div>
+          <div class="jar-note">Directly collected from natural bee farms</div>
+          <div class="honeycomb"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="why">
+    <div class="container">
+      <h2 class="reveal">Why Choose Our Honey?</h2>
+      <p class="sub reveal">We bring you honey in its most natural form—unprocessed, unpasteurized, and full of nature’s goodness.</p>
+      <div class="cards">
+        <article class="card reveal"><div class="icon">🍯</div><h3>100% Pure Raw Honey</h3><p>No added sugar, artificial flavor, or preservatives—only pure honey collected naturally.</p></article>
+        <article class="card reveal"><div class="icon">🐝</div><h3>Direct From Bee Farms</h3><p>We collect directly from trusted natural bee farms, ensuring freshness and complete traceability.</p></article>
+        <article class="card reveal"><div class="icon">🚫</div><h3>No Sugar or Chemicals</h3><p>Free from added sugar, chemicals, and harmful additives—just clean, natural honey.</p></article>
+        <article class="card reveal"><div class="icon">🧪</div><h3>Quality You Can Trust</h3><p>Every batch is carefully checked to maintain purity, aroma, taste, and natural quality.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="process" class="process">
+    <div class="container">
+      <h2 class="reveal">Our Collection Process</h2>
+      <p class="sub reveal">From the hive to your home, we follow a careful and transparent process.</p>
+      <div class="steps">
+        <article class="step reveal"><h3>Natural Bee Farms</h3><p>Our beekeepers maintain healthy hives in clean, green, and natural environments.</p></article>
+        <article class="step reveal"><h3>Fresh Collection</h3><p>Honey is collected at the right time to preserve its natural enzymes and rich flavor.</p></article>
+        <article class="step reveal"><h3>Careful Filtering</h3><p>Only gentle filtering is used—no heating or processing that reduces natural goodness.</p></article>
+        <article class="step reveal"><h3>Safe Packaging</h3><p>Fresh honey is sealed in food-grade jars and prepared for nationwide delivery.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="benefits">
+    <div class="container">
+      <h2 class="reveal">Health Benefits</h2>
+      <p class="sub reveal">Raw honey is a natural gift that can be part of a healthy, balanced lifestyle.</p>
+      <div class="benefits">
+        <div class="benefit reveal"><span>⚡</span><div><h3>Natural Energy</h3><p>A quick and natural source of energy for busy days.</p></div></div>
+        <div class="benefit reveal"><span>🛡️</span><div><h3>Antioxidant Support</h3><p>Raw honey contains natural antioxidant compounds.</p></div></div>
+        <div class="benefit reveal"><span>🌿</span><div><h3>Soothes Throat</h3><p>Commonly enjoyed warm with lemon or herbal tea.</p></div></div>
+        <div class="benefit reveal"><span>💛</span><div><h3>Better Than Refined Sugar</h3><p>A natural alternative to processed sweeteners.</p></div></div>
+        <div class="benefit reveal"><span>🍽️</span><div><h3>Supports Digestion</h3><p>Traditionally used to support digestive comfort.</p></div></div>
+        <div class="benefit reveal"><span>🧴</span><div><h3>Skin-Friendly Uses</h3><p>Often used in natural skincare and home remedies.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="products" class="process">
+    <div class="container">
+      <h2 class="reveal">Product Sizes</h2>
+      <p class="sub reveal">Choose the perfect jar for your family, kitchen, or gifting needs.</p>
+      <div class="products">
+        <article class="product reveal"><div class="product-top">🍯</div><div class="product-body"><h3>250g Jar</h3><p>Ideal for tasting and personal use.</p><div class="price">৳ 350</div><a href="https://wa.me/8801XXXXXXXXX?text=I%20want%20to%20order%20250g%20Golden%20Hive%20Honey." class="btn btn-gold">Order Now</a></div></article>
+        <article class="product reveal"><div class="product-top">🍯</div><div class="product-body"><h3>500g Jar</h3><p>Perfect for daily use at home.</p><div class="price">৳ 650</div><a href="https://wa.me/8801XXXXXXXXX?text=I%20want%20to%20order%20500g%20Golden%20Hive%20Honey." class="btn btn-gold">Order Now</a></div></article>
+        <article class="product reveal"><div class="product-top">🍯</div><div class="product-body"><h3>1kg Jar</h3><p>Best value for families and honey lovers.</p><div class="price">৳ 1,200</div><a href="https://wa.me/8801XXXXXXXXX?text=I%20want%20to%20order%201kg%20Golden%20Hive%20Honey." class="btn btn-gold">Order Now</a></div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews">
+    <div class="container">
+      <h2 class="reveal">Customer Reviews</h2>
+      <p class="sub reveal">Loved by customers who value purity, freshness, and natural taste.</p>
+      <div class="reviews">
+        <article class="review reveal"><div class="stars">★★★★★</div><p>“The honey tastes completely natural and fresh. You can instantly tell there is no added sugar.”</p><div class="reviewer">— Rahim Ahmed, Dhaka</div></article>
+        <article class="review reveal"><div class="stars">★★★★★</div><p>“Beautiful packaging and very fast delivery. My family now orders the 1kg jar every month.”</p><div class="reviewer">— Nusrat Jahan, Chattogram</div></article>
+        <article class="review reveal"><div class="stars">★★★★★</div><p>“Golden Hive Honey has become a part of our morning routine. Highly recommended for quality.”</p><div class="reviewer">— Tanvir Hasan, Sylhet</div></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="process">
+    <div class="container faq">
+      <h2 class="reveal">Frequently Asked Questions</h2>
+      <p class="sub reveal">Everything you need to know before ordering.</p>
+      <details class="reveal"><summary>Is your honey 100% pure?</summary><p>Yes. Golden Hive Honey is 100% pure raw honey with no added sugar, chemicals, or artificial ingredients.</p></details>
+      <details class="reveal"><summary>Where do you collect the honey from?</summary><p>We collect honey directly from trusted natural bee farms and experienced local beekeepers.</p></details>
+      <details class="reveal"><summary>Do you provide nationwide delivery?</summary><p>Yes, we deliver across Bangladesh. Delivery time and charges may vary by location.</p></details>
+      <details class="reveal"><summary>How should I store raw honey?</summary><p>Keep the jar tightly closed in a cool, dry place away from direct sunlight. Natural crystallization may occur and does not mean the honey is spoiled.</p></details>
+      <details class="reveal"><summary>Can I order through WhatsApp?</summary><p>Yes. Tap the WhatsApp Order button and send us your preferred product size and delivery address.</p></details>
+    </div>
+  </section>
+
+  <section id="delivery" class="delivery">
+    <div class="container">
+      <h2 class="reveal">Delivery Information</h2>
+      <p class="sub reveal">We deliver fresh honey safely and quickly across Bangladesh.</p>
+      <div class="delivery-grid">
+        <div class="dcard reveal"><h3>🚚 Nationwide Delivery</h3><p>We deliver to districts and cities across Bangladesh through trusted courier partners.</p></div>
+        <div class="dcard reveal"><h3>📦 Secure Packaging</h3><p>Every jar is securely packed to prevent leakage and damage during transit.</p></div>
+        <div class="dcard reveal"><h3>⏱️ Fast Processing</h3><p>Orders are processed quickly after confirmation, with delivery updates shared by WhatsApp.</p></div>
+        <div class="dcard reveal"><h3>💳 Secure Payment</h3><p>Pay securely through bKash, Nagad, bank transfer, or cash on delivery where available.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="container contact">
+      <div class="contact-card reveal">
+        <h2 style="text-align:left">Contact Us</h2>
+        <p>Have a question or want to place a bulk order? We are happy to help.</p>
+        <ul class="contact-list">
+          <li>📞 <a href="tel:+8801XXXXXXXXX">+880 1XXX-XXXXXX</a></li>
+          <li>💬 <a href="https://wa.me/8801XXXXXXXXX">WhatsApp: +880 1XXX-XXXXXX</a></li>
+          <li>✉️ <a href="mailto:hello@goldenhivehoney.com">hello@goldenhivehoney.com</a></li>
+          <li>📍 <a href="https://maps.google.com/?q=Dhaka,Bangladesh" target="_blank" rel="noopener">Find us on Google Maps</a></li>
+        </ul>
+      </div>
+      <div class="map reveal">
+        <iframe title="Golden Hive Honey location" src="https://www.google.com/maps?q=Dhaka,Bangladesh&output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3>Golden Hive Honey</h3>
+        <p>Pure raw honey from nature to your home. Freshly collected from trusted natural bee farms and delivered nationwide.</p>
+        <div class="socials">
+          <a href="https://facebook.com" aria-label="Facebook">f</a>
+          <a href="https://instagram.com" aria-label="Instagram">◎</a>
+          <a href="https://wa.me/8801XXXXXXXXX" aria-label="WhatsApp">💬</a>
+          <a href="mailto:hello@goldenhivehoney.com" aria-label="Email">✉️</a>
+        </div>
+      </div>
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#why">Why Choose Us</a></li>
+          <li><a href="#process">Collection Process</a></li>
+          <li><a href="#products">Product Sizes</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#delivery">Delivery Information</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Contact</h3>
+        <ul>
+          <li><a href="tel:+8801XXXXXXXXX">+880 1XXX-XXXXXX</a></li>
+          <li><a href="mailto:hello@goldenhivehoney.com">hello@goldenhivehoney.com</a></li>
+          <li><a href="https://maps.google.com/?q=Dhaka,Bangladesh" target="_blank" rel="noopener">Google Maps</a></li>
+          <li><a href="https://wa.me/8801XXXXXXXXX">WhatsApp Order</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="copyright">© <span id="year"></span> Golden Hive Honey. All rights reserved.</div>
+  </div>
+</footer>
+
+<a class="whatsapp-float" href="https://wa.me/8801XXXXXXXXX?text=Hello%2C%20I%20want%20to%20order%20Golden%20Hive%20Honey." aria-label="Order on WhatsApp">💬</a>
+
+<script>
+document.getElementById('year').textContent=new Date().getFullYear();
+const io=new IntersectionObserver(entries=>{entries.forEach(e=>{if(e.isIntersecting){e.target.classList.add('visible');io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+document.querySelector('.menu-btn').addEventListener('click',()=>{const u=document.querySelector('nav ul');u.style.display=u.style.display==='flex'?'none':'flex';u.style.position='absolute';u.style.top='64px';u.style.right='4%';u.style.background='#fffaf0';u.style.flexDirection='column';u.style.padding='18px';u.style.borderRadius='16px';u.style.boxShadow='0 18px 45px rgba(59,36,18,.15)'});
+</script>
+</body>
+</html>
